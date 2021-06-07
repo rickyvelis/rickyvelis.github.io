@@ -9,23 +9,22 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+    body {
+      background-color: WhiteSmoke;
+      /* font-family: 'Inconsolata', monospace; */
+    }
 
     pre
     {
-      /* font-family: 'Syne Mono', monospace; */
-      /* font-family: 'Anonymous Pro', monospace; */
-      font-family: 'Inconsolata', monospace;
-      /* font-family: 'Anonymous Pro', monospace; */
       text-align: center;
 	    position: static;
-      margin-top:10%;
-      margin-left: clamp(15px, 30%, 50px);
-      margin-right: clamp(15px, 30%, 50px);
       word-wrap: break-word;
       white-space: pre-wrap;       /* css-3 */
       white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -34,57 +33,73 @@
       word-wrap: break-word;       /* Internet Explorer 5.5+ */
     }
 
-    img {
+    h1 {
+      
+      font-family: 'Syne Mono', monospace;
+    }
+
+    .pfp {
       border-radius: 50%;
-      border-style: dotted;
-    }
-
-    /* unvisited link */
-    a:link {
-     color: green;
-    }
-
-    /* visited link */
-    a:visited {
-     color: green;
-    }
-
-    /* mouse over link */
-    a:hover {
-     color: green;
-    }
-
-    /* selected link */
-    a:active {
-     color: green;
     }
 </style>
 </head>
 
 <body>
-  <!-- <i> -->
-  <pre>
--------------------------------------
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <i>
+          <pre>
+<!-- -------------------------------------
 ---Ricky-Velis-----------------------
 -------------------------------------
 -------------software-engineer-&-----
 --------------------game-developer---
--------------------------------------
+------------------------------------- -->
+<h1>Ricky Velis' Portfolio</h1>
+<img src="rcs/pic.jpg" alt="me" width="150" height="150" class="pfp">
 
- <img src="pic.jpg" alt="me" width="120" height="120">
-
---<a href="https://twitter.com/goteflower">twitter</a>--<a href="https://github.com/rickyvelis">github</a>--<a href="https://www.linkedin.com/in/ricky-velis/">linkedin</a>--
-
-
-*  about me  *
-<div class="about">Hi! I'm Ricky Velis. I'm currently finishing up the last year of the software engineering major that I'm following. Withing my specialization is game development & simulation.</div>
+-- <a href="https://twitter.com/goteflower">twitter</a> * <a href="https://github.com/rickyvelis">github</a> * <a href="https://www.linkedin.com/in/ricky-velis/">linkedin</a> --
 
 
-*  links  *
+  *  about me  *
 
-*  projects  *
-  </pre>
-<!-- </i> -->
+<div class="about">Hi! I'm Ricky Velis. I'm in the final year of my Software Engineering bachelor, doing a specialization in Game Development & Simulation.</div>
+          </pre>
+        </i>
+      </div>
+      <div class="col-12 col-lg-6">
+<pre>
+
+  *  projects  *
+</pre>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <a href="lvldesignGOLD/">
+              <img src="rcs/lvldsgn.png" class="card-img-top" alt="Screenshot">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Level Design Assignment</h5>
+              <p class="card-text">The result of a level design assignment for my bachelor.</p>
+              <a href="lvldesignGOLD/" class="btn btn-primary">Check out</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
+            <div class="card-body">
+              <h5 class="card-title">Empty Card</h5>
+              <p class="card-text">The result of a level design assignment for my bachelor.</p>
+              <a href="#" class="btn btn-primary">Check out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
   <script src="js/scripts.js"></script>
 </body>
 <css>
